@@ -1,0 +1,4 @@
+-- insert into Country value(1, 'Belgrade', 'SRB', 'Serbia', 'Europe', 'Serbian');
+-- insert into Country value(2, 'New Delhi', 'IN', 'India', 'Asia', 'Indian');
+-- insert into Country value(3, 'Amsterdam', 'NLD', 'The Netherlands', 'Europe', 'Dutch');
+-- insert into Country value(4, 'Budapest', 'HUN', 'Hungary', 'Europe', 'Hungarian');
