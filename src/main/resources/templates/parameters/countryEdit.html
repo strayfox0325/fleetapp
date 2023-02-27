@@ -8,7 +8,7 @@
 
         <div class="container" style="width: 70%">
         <div class="row">
-            <form class="form-horizontal" th:action="@{/countries}" method="post">
+            <form class="form-horizontal" th:action="@{'/countries/update/'+${country.id}}" method="put">
                 <div class="col-lg-8=12">
                     <section class="panel">
                         <header class="panel-heading">

@@ -45,4 +45,10 @@ public class CountryController {
         model.addAttribute("country", country);
         return "parameters/countryEdit";
     }
+
+    @RequestMapping(value = "/countries/update/{id}", method = {RequestMethod.GET, RequestMethod.PUT})
+    public String update(Country country) {
+        countryService.save(country);
+        return "redirect:/countries";
+    }
 }
