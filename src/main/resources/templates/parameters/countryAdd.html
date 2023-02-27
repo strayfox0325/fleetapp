@@ -5,7 +5,55 @@
 <body>
 
 <div layout:fragment="content">
+    <div class="container" style="width: 70%">
+        <div class="row">
+            <form class="form-horizontal" th:action="@{/countries}" method="post">
+                <div class="col-lg-8=12">
+                    <section class="panel">
+                        <header class="panel-heading">
+                            Add New Country
+                        </header>
+                        <div class="panel-body">
+                            <div class="form-group">
+                                <label class="control-label col-sm-4"> Description</label>
+                                <div class="col-sm-6">
+                                    <input name="description" type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-sm-4"> Capital</label>
+                                <div class="col-sm-6">
+                                    <input name="capital" class="form-control" type="text">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-sm-4"> Nationality</label>
+                                <div class="col-sm-6">
+                                    <input name="nationality" type="text" class="form-control"/>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-sm-4">Continent</label>
 
+                                <div class="col-sm-5">
+                                    <input name="continent" type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-sm-4">Code</label>
+
+                                <div class="col-sm-5">
+                                    <input name="code" type="text" class="form-control">
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-success">Save</button>
+                            <a href="/countries" class="btn btn-warning">Cancel</a>
+                        </div>
+                    </section>
+                </div>
+            </form>
+        </div>
+    </div>
 </div>
 </body>
 </html>
