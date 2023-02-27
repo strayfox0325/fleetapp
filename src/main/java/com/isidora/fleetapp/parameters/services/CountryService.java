@@ -21,4 +21,8 @@ public class CountryService {
         countryRepository.save(country);
     }
 
+    public void delete(Integer id) {
+        countryRepository.deleteById(id);
+    }
+
 }
