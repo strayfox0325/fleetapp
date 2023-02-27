@@ -51,4 +51,11 @@ public class CountryController {
         countryService.save(country);
         return "redirect:/countries";
     }
+
+    @GetMapping("/country-details/{id}")
+    public String detailsCountry(@PathVariable Integer id, Model model) {
+        Country country = countryService.getById(id);
+        model.addAttribute("country", country);
+        return "parameters/countryDetails";
+    }
 }

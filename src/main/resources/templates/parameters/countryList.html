@@ -35,7 +35,8 @@
                         <td th:text="${country.nationality}"></td>
                         <td>
                             <div class="btn-group">
-                                <a class="btn btn-primary"><i class="icon_plus_alt2"></i></a>
+                                <a class="btn btn-primary"
+                                   th:href="@{'/country-details/'+${country.id}}"><i class="icon_plus_alt2"></i></a>
                                 <a class="btn btn-warning"
                                    th:href="@{'/country-edit/'+${country.id}}"><i class="icon_check_alt2"></i></a>
                                 <a class="btn btn-danger"
