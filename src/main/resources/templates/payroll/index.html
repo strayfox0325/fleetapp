@@ -2,12 +2,32 @@
 <html lang="en"
       xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
       layout:decorate="~{_layout.html}">
-
 <body>
 
 <div layout:fragment="content">
+    <section class="wrapper">
+                <ul class="breadcrumb">
+                    <li><i class="fa fa-home"></i><a href="/index">Home</a></li>
+                    <li><i class="fa fa-bars"></i><a href="/index">Payroll</a></li>
+                    <li><i class="fa fa-home"></i><a href="/index">Payroll Home</a></li>
+                </ul>
+        <div class="row">
+            <div class="col-lg-4">
+                <section class="panel">
+                    <div class="panel-body">
+                        <div class="card">
+                            <div class="card-body">
+                                <h3 class="card-title"><b>Clients</b></h3>
+                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                <a href="#" class="btn btn-primary">Manage Clients</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
 
-    <h1>Welcome to the Payroll Department</h1>
+    </section>
 
 </div>
 </body>
