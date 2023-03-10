@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 @Service
-public class CountryService {
+public class SupplierService {
 
     @Autowired
     private CountryRepository countryRepository;

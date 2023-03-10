@@ -313,14 +313,15 @@
         <div id="sidebar" class="nav-collapse">
             <!-- sidebar menu start-->
             <ul class="sidebar-menu">
-                <li class="active">
-                    <a class="" href="/index">
+                <li class="sub-menu">
+                    <a href="/" class="dropdown-btn">
                         <i class="icon_house_alt"></i>
                         <span>Dashboard</span>
+                        <span class="menu-arrow arrow_carrot-right"></span>
                     </a>
                 </li>
                 <li class="sub-menu">
-                    <a href="javascript:" class="">
+                    <a href="javascript:" class="dropdown-btn">
                         <i class="icon_document_alt"></i>
                         <span>Fleet</span>
                         <span class="menu-arrow arrow_carrot-right"></span>
@@ -404,6 +405,7 @@
 <!-- container section start -->
 
 <!-- javascripts -->
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 <script th:src="@{/js/jquery.js}"></script>
 <script th:src="@{/js/jquery-ui-1.10.4.min.js}"></script>
 <script th:src="@{/js/jquery-1.8.3.min.js}"></script>
