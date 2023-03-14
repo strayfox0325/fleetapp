@@ -26,5 +26,4 @@ public class State {
 	@JoinColumn(name="countryid", insertable=false, updatable=false)
 	private Country country;
 	private Integer countryid;
-	private String details;
 }

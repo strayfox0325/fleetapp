@@ -18,7 +18,7 @@
                             <div class="form-group">
                                 <label class="control-label col-sm-4"> Name</label>
                                 <div class="col-sm-6">
-                                    <input name="description" type="text" class="form-control" th:value="${state.name}" readonly/>
+                                    <input name="name" type="text" class="form-control" th:value="${state.name}" readonly/>
                                 </div>
                             </div>
                             <div class="form-group">
@@ -28,14 +28,13 @@
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label class="control-label col-sm-4"> Details</label>
+                                <label class="control-label col-sm-4"> Country</label>
                                 <div class="col-sm-6">
-                                    <input name="nationality" type="text" class="form-control" th:value="${state.details}" readonly/>
+                                    <input name="country" class="form-control" type="text" th:value="${state.country.description}" readonly/>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label class="control-label col-sm-4">Code</label>
-
                                 <div class="col-sm-5">
                                     <input name="code" type="text" class="form-control" th:value="${state.code}" readonly>
                                 </div>

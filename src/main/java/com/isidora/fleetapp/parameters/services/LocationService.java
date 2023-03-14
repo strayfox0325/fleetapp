@@ -15,22 +15,22 @@ public class LocationService {
     @Autowired
     private LocationRepository locationRepository;
 
-    // Get All Countries
+    // Get All Locations
     public List<Location> getAll() {
         return locationRepository.findAll();
     }
 
-    // Get State By Id
+    // Get Location By Id
     public void save(Location location) {
         locationRepository.save(location);
     }
 
-    // Delete State
+    // Delete Location
     public void delete(Integer id) {
         locationRepository.deleteById(id);
     }
 
-    // Update State
+    // Update Location
     public Location getById(Integer id) {
         return locationRepository.findById(id).orElse(null);
     }

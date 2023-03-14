@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{_layout.html}">
+<body>
+
+<div layout:fragment="content">
+
+    <div class="container" style="width: 70%">
+        <div class="row">
+            <form class="form-horizontal" method="put">
+                <div class="col-lg-8=12">
+                    <section class="panel">
+                        <header class="panel-heading">
+                            Change Location Details
+                        </header>
+                        <div class="panel-body">
+
+                            <div class="form-group">
+                                <label class="control-label col-sm-4"> City</label>
+                                <div class="col-sm-6">
+                                    <input name="city" type="text" class="form-control" th:value="${location.city}"
+                                           readonly/>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-sm-4"> Address</label>
+                                <div class="col-sm-6">
+                                    <input name="address" type="text" class="form-control"
+                                           th:value="${location.address}" readonly/>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-sm-4"> Description</label>
+                                <div class="col-sm-6">
+                                    <input name="description" type="text" class="form-control"
+                                           th:value="${location.description}" readonly/>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-sm-4"> Details</label>
+                                <div class="col-sm-6">
+                                    <input name="details" type="text" class="form-control"
+                                           th:value="${location.details}" readonly/>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-sm-4"> Country</label>
+                                <div class="col-sm-6">
+                                    <input name="country" type="text" class="form-control"
+                                           th:value="${location.country.description}" readonly/>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-sm-4"> State</label>
+                                <div class="col-sm-6">
+                                    <input name="state" type="text" class="form-control"
+                                           th:value="${location.state.name}" readonly/>
+                                </div>
+                            </div>
+
+                            <button type="submit" class="btn btn-success" disabled>Save</button>
+                            <a href="/parameters/locations" class="btn btn-warning">Back</a>
+                        </div>
+                    </section>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>
