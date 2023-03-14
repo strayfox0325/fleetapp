@@ -15,44 +15,51 @@ public class CountryController {
     @Autowired
     private CountryService countryService;
 
-    @GetMapping("/countries")
+    // Get All Countries
+    @GetMapping("/parameters/countries")
     public String getAll(Model model) {
         List<Country> countries = countryService.getAll();
         model.addAttribute("countries", countries);
         return "parameters/countryList";
     }
 
-    @GetMapping("/country-add")
+    // Add a Country
+    @GetMapping("/parameters/country-add")
     public String addCountry() {
         return "parameters/countryAdd";
     }
 
-    @PostMapping("/countries")
+    // Save a Country
+    @PostMapping("/parameters/countries")
     public String save(Country country) {
         countryService.save(country);
-        return "redirect:/countries";
+        return "redirect:/parameters/countries";
     }
 
-    @RequestMapping(value = "/countries/delete/{id}", method = {RequestMethod.GET, RequestMethod.DELETE})
+    // Delete a Country
+    @RequestMapping(value = "/parameters/countries/delete/{id}", method = {RequestMethod.GET, RequestMethod.DELETE})
     public String delete(@PathVariable Integer id) {
         countryService.delete(id);
-        return "redirect:/countries";
+        return "redirect:/parameters/countries";
     }
 
-    @GetMapping("/country-edit/{id}")
+    // Edit a Country
+    @GetMapping("/parameters/country-edit/{id}")
     public String editCountry(@PathVariable Integer id, Model model) {
         Country country = countryService.getById(id);
         model.addAttribute("country", country);
         return "parameters/countryEdit";
     }
 
-    @RequestMapping(value = "/countries/update/{id}", method = {RequestMethod.GET, RequestMethod.PUT})
+    // Update a Country
+    @RequestMapping(value = "/parameters/countries/update/{id}", method = {RequestMethod.GET, RequestMethod.PUT})
     public String update(Country country) {
         countryService.save(country);
-        return "redirect:/countries";
+        return "redirect:/parameters/countries";
     }
 
-    @GetMapping("/country-details/{id}")
+    // Country Details
+    @GetMapping("/parameters/country-details/{id}")
     public String detailsCountry(@PathVariable Integer id, Model model) {
         Country country = countryService.getById(id);
         model.addAttribute("country", country);

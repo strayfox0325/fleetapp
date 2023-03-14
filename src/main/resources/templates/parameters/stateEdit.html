@@ -6,55 +6,49 @@
 
 <div layout:fragment="content">
 
-        <div class="container" style="width: 70%">
+
+    <div class="container" style="width: 70%">
         <div class="row">
-            <form class="form-horizontal" th:action="@{'/countries/update/'+${country.id}}" method="put">
+            <form class="form-horizontal" th:action="@{'/parameters/states/update/'+${state.id}}" method="post">
                 <div class="col-lg-8=12">
                     <section class="panel">
                         <header class="panel-heading">
-                            Change Country Details
+                            Change State Details
                         </header>
                         <div class="panel-body">
                             <div class="form-group">
-                                <label class="control-label col-sm-4"> Description</label>
+                                <label class="control-label col-sm-4"> Name</label>
                                 <div class="col-sm-6">
-                                    <input name="description" type="text" class="form-control" th:value="${country.description}"/>
+                                    <input name="name" type="text" class="form-control" th:value="${state.name}"/>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label class="control-label col-sm-4"> Capital</label>
                                 <div class="col-sm-6">
-                                    <input name="capital" class="form-control" type="text" th:value="${country.capital}"/>
+                                    <input name="capital" class="form-control" type="text" th:value="${state.capital}"/>
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label class="control-label col-sm-4"> Nationality</label>
-                                <div class="col-sm-6">
-                                    <input name="nationality" type="text" class="form-control" th:value="${country.nationality}"/>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label class="control-label col-sm-4">Continent</label>
-
+                                <label class="control-label col-sm-4"> Code</label>
                                 <div class="col-sm-5">
-                                    <input name="continent" type="text" class="form-control" th:value="${country.continent}">
+                                    <input name="code" type="text" class="form-control" th:value="${state.code}">
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label class="control-label col-sm-4">Code</label>
-
+                                <label class="control-label col-sm-4"> Country</label>
                                 <div class="col-sm-5">
-                                    <input name="code" type="text" class="form-control" th:value="${country.code}">
+                                    <input name="country" type="text" class="form-control" th:value="${state.country.description}">
                                 </div>
                             </div>
                             <button type="submit" class="btn btn-success">Save</button>
-                            <a href="/countries" class="btn btn-warning">Cancel</a>
+                            <a href="/parameters/states" class="btn btn-warning">Cancel</a>
                         </div>
                     </section>
                 </div>
             </form>
         </div>
     </div>
+
 </div>
 </body>
 </html>

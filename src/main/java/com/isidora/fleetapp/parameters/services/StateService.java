@@ -1,6 +1,5 @@
 package com.isidora.fleetapp.parameters.services;
 
-import com.isidora.fleetapp.parameters.models.Country;
 import com.isidora.fleetapp.parameters.models.State;
 import com.isidora.fleetapp.parameters.repositories.StateRepository;
 import org.springframework.beans.factory.annotation.Autowired;

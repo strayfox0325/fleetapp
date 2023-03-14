@@ -8,7 +8,7 @@
 
         <div class="container" style="width: 70%">
         <div class="row">
-            <form class="form-horizontal" th:action="@{'/countries/update/'+${country.id}}" method="put">
+            <form class="form-horizontal" th:action="@{'/parameters/countries/update/'+${country.id}}" method="put">
                 <div class="col-lg-8=12">
                     <section class="panel">
                         <header class="panel-heading">
@@ -48,7 +48,7 @@
                                 </div>
                             </div>
                             <button type="submit" class="btn btn-success">Save</button>
-                            <a href="/countries" class="btn btn-warning">Cancel</a>
+                            <a href="/parameters/countries" class="btn btn-warning">Cancel</a>
                         </div>
                     </section>
                 </div>

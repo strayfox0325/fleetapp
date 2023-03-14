@@ -39,4 +39,12 @@ public class ApplicationController {
     public String showPayroll() {
         return "/payroll/index";
     }
+    @GetMapping("/security")
+    public String showSecurity() {
+        return "/security/index";
+    }
+    @GetMapping("/reports")
+    public String showReports() {
+        return "/reports/index";
+    }
 }
