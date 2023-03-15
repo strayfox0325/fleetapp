@@ -2,9 +2,7 @@ package com.isidora.fleetapp.parameters.controllers;
 
 import com.isidora.fleetapp.parameters.models.*;
 import com.isidora.fleetapp.parameters.models.Location;
-import com.isidora.fleetapp.parameters.models.Location;
 import com.isidora.fleetapp.parameters.services.*;
-import com.isidora.fleetapp.parameters.services.LocationService;
 import com.isidora.fleetapp.parameters.services.LocationService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
